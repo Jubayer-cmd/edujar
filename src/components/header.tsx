@@ -25,7 +25,7 @@ export default function Header() {
               </span>
               <input
                 type='text'
-                className='py-2 pl-10 pr-12 focus:outline-none border-none'
+                className='py-2 pl-10 pr-12 w-52 md:w-80 focus:outline-none border-none'
                 placeholder='Want to learn?'
               />
               <button className='absolute inset-y-1 right-4 px-5 bg-[#7F56D9] text-white rounded-full'>

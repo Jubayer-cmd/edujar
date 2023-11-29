@@ -75,7 +75,7 @@ export default function Testmonials() {
             <Slider {...settings} ref={sliderRef}>
               {testimonials.map((testimonial) => (
                 <div key={testimonial.id} className='outline-none'>
-                  <div className=' p-4 rounded-md shadow-md'>
+                  <div className=' p-4'>
                     <div className='flex items-center justify-between'>
                       <div className='flex items-center mt-10 mb-5'>
                         <img
@@ -93,7 +93,17 @@ export default function Testmonials() {
                         </div>
                       </div>
                       <div>
-                        <StarsRating value={testimonial.rating} />
+                        <StarsRating
+                          value={testimonial.rating}
+                          style={{
+                            full: {
+                              star: {
+                                width: '15px',
+                                height: '15px', // Adjust the width of the active (full) star
+                              },
+                            },
+                          }}
+                        />
                       </div>
                     </div>
                     <hr className='mb-8' />

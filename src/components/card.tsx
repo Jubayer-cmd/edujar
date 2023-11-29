@@ -60,7 +60,17 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
         </div>
         <hr />
         <div className='flex items-center justify-between'>
-          <StarsRating value={rating} />
+          <StarsRating
+            value={rating}
+            style={{
+              full: {
+                star: {
+                  width: '15px',
+                  height: '15px', // Adjust the width of the active (full) star
+                },
+              },
+            }}
+          />
           <p className='text-[#D9ECFF] font-inter text-base underline'>
             Enroll now
           </p>
