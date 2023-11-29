@@ -18,7 +18,7 @@ export default function Section() {
       <img src={dot} alt='dot' className='absolute left-8 bottom-0 w-48 h-48' />
       <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-5 gap-5 mx-auto'>
         <div className='justify-self-center order-2 col-span-5 md:col-span-2'>
-          <h1 className='font-caladea font-bold text-4xl md:text-7xl text-white text-center'>
+          <h1 className='font-caladea font-bold text-4xl md:text-7xl text-white text-center md:text-left'>
             What is our <span className='text-[#BDA0FF]'>difference</span>
           </h1>
 

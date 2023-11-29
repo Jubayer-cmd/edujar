@@ -1,9 +1,8 @@
-// Your CourseCard component remains the same
-
-// Course.tsx file
 import React, { useEffect, useState } from 'react';
 import CourseCard from './card';
 import data from './../data.json';
+import frame from './../assets/Frame (1).png';
+import vector from './../assets/Ellipse 118.png';
 
 type CourseData = {
   category: string;
@@ -69,6 +68,13 @@ const Course: React.FC = () => {
           <CourseCard key={index} course={course} />
         ))}
       </div>
+      <div className='flex justify-center mt-20'>
+        <button className='bg-[#7F56D9] px-6 py-4 rounded-full text-white font-semibold hover:bg-[#6244a3]'>
+          Explore all Courses
+        </button>
+      </div>
+      <img src={frame} alt='' className='absolute -bottom-16 left-0 w-60' />
+      <img src={vector} alt='' className='absolute -bottom-16 right-0 w-20' />
     </div>
   );
 };

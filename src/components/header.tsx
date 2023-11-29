@@ -1,7 +1,10 @@
 import headerPic from './../assets/headerPic.png';
+import vector from './../assets/Vector.png';
+
 export default function Header() {
   return (
     <div className='max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:px-8 relative mx-auto'>
+      <img src={vector} alt='' className='absolute left-0 top-28 w-8' />
       <div className='grid grid-cols-1 md:grid-cols-2 items-center'>
         <div>
           <h1 className='font-caladea text-white text-7xl leading-1 tracking-wide'>

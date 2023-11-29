@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { LiaLaptopCodeSolid } from 'react-icons/lia';
-
+import vector from './../assets/Frame.png';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -10,6 +10,11 @@ const Navbar = () => {
 
   return (
     <nav className='max-w-screen-xl px-2 md:px-4 bg-[#2C1F4A] relative pt-4 mx-auto'>
+      <img
+        src={vector}
+        alt=''
+        className='absolute top-0 left-64 w-16 hidden lg:block'
+      />
       <div className='max-w-7xl mx-auto px-4'>
         <div className='flex items-center justify-between h-16'>
           <div className='flex items-center'>
