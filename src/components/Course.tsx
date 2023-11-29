@@ -54,7 +54,7 @@ const Course: React.FC = () => {
   };
 
   return (
-    <div className='max-w-screen-xl px-4 py-8 mt-20 sm:py-12 sm:px-6 lg:px-8 relative mx-auto'>
+    <div className='max-w-screen-xl px-4 py-8 mt-0 md:mt-20 sm:py-12 sm:px-6 lg:px-8 relative mx-auto'>
       <div className='block md:flex items-center justify-between w-full'>
         <h1 className='text-white text-4xl mb-10 md:mb-0 md:text-7xl font-caladea font-bold text-center md:text-left'>
           Popular <span className='text-[#BEA0FF]'>Courses</span>
@@ -73,8 +73,16 @@ const Course: React.FC = () => {
           Explore all Courses
         </button>
       </div>
-      <img src={frame} alt='' className='absolute -bottom-16 left-0 w-60' />
-      <img src={vector} alt='' className='absolute -bottom-16 right-0 w-20' />
+      <img
+        src={frame}
+        alt=''
+        className='absolute -bottom-16 left-0 w-32 md:w-60'
+      />
+      <img
+        src={vector}
+        alt=''
+        className='absolute -bottom-8 md:-bottom-16 right-0 w-14 md:w-20'
+      />
     </div>
   );
 };

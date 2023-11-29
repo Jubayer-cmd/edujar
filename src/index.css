@@ -2,8 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.radial-gradient {
-  border-radius: 694px;
-  background: rgba(61, 92, 255, 0.20);
-  filter: blur(150px);
-}

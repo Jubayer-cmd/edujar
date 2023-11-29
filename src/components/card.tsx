@@ -25,7 +25,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
         <div className='flex items-center justify-between'>
           <div className='flex'>
             <IoMdPlay className='bg-[#7966EA] rounded-full inline-block text-2xl p-1 mr-2 text-white' />
-            <p className='text-[#D9ECFF] font-inter'>{category}</p>
+            <p className='text-[#D9ECFF] font-inter'>10x Videos</p>
           </div>
 
           <p className='bg-[#DADAF738] px-4 py-1 text-[#D9ECFF] font-inter rounded-2xl'>

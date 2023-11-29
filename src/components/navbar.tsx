@@ -13,7 +13,7 @@ const Navbar = () => {
       <img
         src={vector}
         alt=''
-        className='absolute top-0 left-64 w-16 hidden lg:block'
+        className='absolute top-0 left-64 w-14 hidden lg:block'
       />
       <div className='max-w-7xl mx-auto px-4'>
         <div className='flex items-center justify-between h-16'>
